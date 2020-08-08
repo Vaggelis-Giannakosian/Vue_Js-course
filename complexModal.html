@@ -20,22 +20,22 @@
 <!--</div>-->
 
 <div id="root" class="container">
+    <modal>
+        <template slot="header">Anything</template>
 
-    <message title="Hello World" body="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></message>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam dolor doloribus odio officia porro quae quasi qui, sapiente soluta!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam dolor doloribus odio officia porro quae quasi qui, sapiente soluta!</p>
 
-    <button @click="showModal=true">
-        Show modal
-    </button>
-    <modal v-show="showModal" @closed="showModal=false">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque veritatis, vitae. Cupiditate deserunt dignissimos distinctio et excepturi facilis ipsam ipsum itaque laborum, minus natus nulla optio perspiciatis placeat porro quis, quos, saepe sed similique sunt tempora totam vero. Minus, qui.
+        <template slot="footer">
+            <button class="button is-success">Save changes</button>
+            <button class="button">Cancel</button>
+        </template>
     </modal>
-
-
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <!--<script src="main.js"></script>-->
-<script src="modal.js" ></script>
+<script src="complexModal.js" ></script>
 
 </body>
 </html>
